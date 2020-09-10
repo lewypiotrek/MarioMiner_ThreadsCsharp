@@ -1,0 +1,23 @@
+D:\!STUDIA\CSharp\GameLoopProject — kopia\GameLoopProject\obj\Debug\MarioMiner.Properties.Resources.resources
+D:\!STUDIA\CSharp\GameLoopProject — kopia\GameLoopProject\obj\Debug\MarioMiner.csproj.GenerateResource.cache
+D:\!STUDIA\CSharp\GameLoopProject — kopia\GameLoopProject\obj\Debug\MarioMiner.csproj.CoreCompileInputs.cache
+D:\!STUDIA\CSharp\GameLoopProject — kopia\GameLoopProject\obj\Debug\MarioMiner.Form1.resources
+D:\!STUDIA\CSharp\GameLoopProject — kopia\GameLoopProject\bin\Debug\MarioMiner.exe.config
+D:\!STUDIA\CSharp\GameLoopProject — kopia\GameLoopProject\bin\Debug\MarioMiner.exe
+D:\!STUDIA\CSharp\GameLoopProject — kopia\GameLoopProject\bin\Debug\MarioMiner.pdb
+D:\!STUDIA\CSharp\GameLoopProject — kopia\GameLoopProject\bin\Debug\WindowsBase.dll
+D:\!STUDIA\CSharp\GameLoopProject — kopia\GameLoopProject\obj\Debug\MarioMiner.csproj.CopyComplete
+D:\!STUDIA\CSharp\GameLoopProject — kopia\GameLoopProject\obj\Debug\MarioMiner.exe
+D:\!STUDIA\CSharp\GameLoopProject — kopia\GameLoopProject\obj\Debug\MarioMiner.pdb
+D:\!STUDIA\CSharp\MarioMiner\MarioMiner\bin\Debug\MarioMiner.exe.config
+D:\!STUDIA\CSharp\MarioMiner\MarioMiner\bin\Debug\MarioMiner.exe
+D:\!STUDIA\CSharp\MarioMiner\MarioMiner\bin\Debug\MarioMiner.pdb
+D:\!STUDIA\CSharp\MarioMiner\MarioMiner\bin\Debug\WindowsBase.dll
+D:\!STUDIA\CSharp\MarioMiner\MarioMiner\obj\Debug\MarioMiner.csprojAssemblyReference.cache
+D:\!STUDIA\CSharp\MarioMiner\MarioMiner\obj\Debug\MarioMiner.Form1.resources
+D:\!STUDIA\CSharp\MarioMiner\MarioMiner\obj\Debug\MarioMiner.Properties.Resources.resources
+D:\!STUDIA\CSharp\MarioMiner\MarioMiner\obj\Debug\MarioMiner.csproj.GenerateResource.cache
+D:\!STUDIA\CSharp\MarioMiner\MarioMiner\obj\Debug\MarioMiner.csproj.CoreCompileInputs.cache
+D:\!STUDIA\CSharp\MarioMiner\MarioMiner\obj\Debug\MarioMiner.csproj.CopyComplete
+D:\!STUDIA\CSharp\MarioMiner\MarioMiner\obj\Debug\MarioMiner.exe
+D:\!STUDIA\CSharp\MarioMiner\MarioMiner\obj\Debug\MarioMiner.pdb
