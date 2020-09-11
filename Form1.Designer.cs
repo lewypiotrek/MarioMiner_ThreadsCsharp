@@ -109,6 +109,7 @@
             this.buttonHire.TabIndex = 5;
             this.buttonHire.Text = "HIRE LUIGI";
             this.buttonHire.UseVisualStyleBackColor = true;
+            this.buttonHire.Click += new System.EventHandler(this.buttonHire_Click);
             // 
             // buttonLearn
             // 
@@ -117,8 +118,9 @@
             this.buttonLearn.Name = "buttonLearn";
             this.buttonLearn.Size = new System.Drawing.Size(181, 62);
             this.buttonLearn.TabIndex = 6;
-            this.buttonLearn.Text = "LEARN HOW TO MINE BETTER";
+            this.buttonLearn.Text = "DEVELOP YOUR SKILLS";
             this.buttonLearn.UseVisualStyleBackColor = true;
+            this.buttonLearn.Click += new System.EventHandler(this.buttonLearn_Click);
             // 
             // labelCost2
             // 

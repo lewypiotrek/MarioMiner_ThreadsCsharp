@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Drawing;
 using System.Threading.Tasks;
+using System.Threading;
 
 namespace MarioMiner
 {
@@ -19,8 +20,12 @@ namespace MarioMiner
         public void SellStone() { _myGame.SellStone(); }
         public int GetCosts(int costType)
         {
-    
-            return 0;
+            if (costType == 0)
+                return _myGame.luigiCost;
+            else if (costType == 1)
+                return _myGame.levelCost;
+            else     
+                return 0;
         }
 
 
@@ -41,6 +46,14 @@ namespace MarioMiner
             // Set previous game time
             DateTime _previousGameTime = DateTime.Now;
 
+            // Prepare thread for auto digging
+
+            ThreadStart threadDelegate = new ThreadStart(_myGame.AutoDigStone);
+            Thread AutoDigThread = new Thread(threadDelegate);
+            AutoDigThread.IsBackground = true; // to make sure that the thread will be abortet after windows close
+            AutoDigThread.Start(); 
+             
+
             while (Running)
             {
                 // Calculate the time elapsed since the last game loop cycle
@@ -51,6 +64,7 @@ namespace MarioMiner
                 _myGame.Update(GameTime);
                 // Update Game at 60fps
                 await Task.Delay(8);
+
             }
         }
 
@@ -64,6 +78,15 @@ namespace MarioMiner
         public void Draw(Graphics gfx)
         {
             _myGame.Draw(gfx);
+        }
+
+        public void LevelUp()
+        {
+            _myGame.level++;        
+        }
+        public void CreateLuigi()
+        {
+            _myGame.HireLuigi();
         }
     }
 }

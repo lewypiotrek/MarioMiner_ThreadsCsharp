@@ -60,6 +60,7 @@
     <Compile Include="GameLoop.cs" />
     <Compile Include="Game.cs" />
     <Compile Include="GameSprite.cs" />
+    <Compile Include="LuigiSpirit.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
@@ -98,6 +99,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\background.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LuigiUp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LuigiDown.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LuigiBlank.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

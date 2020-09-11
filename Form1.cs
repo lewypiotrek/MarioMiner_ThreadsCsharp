@@ -62,5 +62,22 @@ namespace MarioMiner
             }
 
         }
+
+        private void buttonLearn_Click(object sender, EventArgs e)
+        {
+            gameLoop.LevelUp();
+        }
+
+        private void buttonHire_Click(object sender, EventArgs e)
+        {
+            gameLoop.CreateLuigi();
+
+            // 0 - luigi cost 1 - learn cost
+            if(gameLoop.GetGold() >= gameLoop.GetCosts(0))
+            {
+
+            }
+
+        }
     }
 }
