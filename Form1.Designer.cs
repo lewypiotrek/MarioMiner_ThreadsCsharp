@@ -36,13 +36,14 @@
             this.buttonSell = new System.Windows.Forms.Button();
             this.buttonHire = new System.Windows.Forms.Button();
             this.buttonLearn = new System.Windows.Forms.Button();
-            this.labelCost2 = new System.Windows.Forms.Label();
+            this.labelCostLvl = new System.Windows.Forms.Label();
             this.labelCostLearn = new System.Windows.Forms.Label();
             this.labelCostHire = new System.Windows.Forms.Label();
             this.labelCost = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.labelLevelVal = new System.Windows.Forms.Label();
+            this.labelLevel = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // labelScore1
@@ -114,7 +115,7 @@
             // buttonLearn
             // 
             this.buttonLearn.Font = new System.Drawing.Font("Impact", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.buttonLearn.Location = new System.Drawing.Point(26, 161);
+            this.buttonLearn.Location = new System.Drawing.Point(27, 121);
             this.buttonLearn.Name = "buttonLearn";
             this.buttonLearn.Size = new System.Drawing.Size(181, 62);
             this.buttonLearn.TabIndex = 6;
@@ -122,23 +123,23 @@
             this.buttonLearn.UseVisualStyleBackColor = true;
             this.buttonLearn.Click += new System.EventHandler(this.buttonLearn_Click);
             // 
-            // labelCost2
+            // labelCostLvl
             // 
-            this.labelCost2.AutoSize = true;
-            this.labelCost2.BackColor = System.Drawing.Color.Transparent;
-            this.labelCost2.Font = new System.Drawing.Font("Impact", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.labelCost2.Location = new System.Drawing.Point(23, 226);
-            this.labelCost2.Name = "labelCost2";
-            this.labelCost2.Size = new System.Drawing.Size(40, 19);
-            this.labelCost2.TabIndex = 7;
-            this.labelCost2.Text = "Cost:";
+            this.labelCostLvl.AutoSize = true;
+            this.labelCostLvl.BackColor = System.Drawing.Color.Transparent;
+            this.labelCostLvl.Font = new System.Drawing.Font("Impact", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.labelCostLvl.Location = new System.Drawing.Point(24, 186);
+            this.labelCostLvl.Name = "labelCostLvl";
+            this.labelCostLvl.Size = new System.Drawing.Size(43, 19);
+            this.labelCostLvl.TabIndex = 7;
+            this.labelCostLvl.Text = "COST:";
             // 
             // labelCostLearn
             // 
             this.labelCostLearn.AutoSize = true;
             this.labelCostLearn.BackColor = System.Drawing.Color.Transparent;
             this.labelCostLearn.Font = new System.Drawing.Font("Impact", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.labelCostLearn.Location = new System.Drawing.Point(69, 226);
+            this.labelCostLearn.Location = new System.Drawing.Point(70, 186);
             this.labelCostLearn.Name = "labelCostLearn";
             this.labelCostLearn.Size = new System.Drawing.Size(17, 19);
             this.labelCostLearn.TabIndex = 8;
@@ -162,19 +163,9 @@
             this.labelCost.Font = new System.Drawing.Font("Impact", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.labelCost.Location = new System.Drawing.Point(22, 99);
             this.labelCost.Name = "labelCost";
-            this.labelCost.Size = new System.Drawing.Size(40, 19);
+            this.labelCost.Size = new System.Drawing.Size(46, 19);
             this.labelCost.TabIndex = 9;
-            this.labelCost.Text = "Cost:";
-            // 
-            // button1
-            // 
-            this.button1.Font = new System.Drawing.Font("Impact", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.button1.Location = new System.Drawing.Point(25, 121);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(182, 34);
-            this.button1.TabIndex = 11;
-            this.button1.Text = "STOP LUIGI";
-            this.button1.UseVisualStyleBackColor = true;
+            this.labelCost.Text = "COST: ";
             // 
             // label1
             // 
@@ -194,22 +185,45 @@
             this.label2.Font = new System.Drawing.Font("Impact", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.label2.Location = new System.Drawing.Point(23, 44);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(40, 19);
+            this.label2.Size = new System.Drawing.Size(46, 19);
             this.label2.TabIndex = 12;
-            this.label2.Text = "Cost:";
+            this.label2.Text = "COST: ";
+            // 
+            // labelLevelVal
+            // 
+            this.labelLevelVal.AutoSize = true;
+            this.labelLevelVal.BackColor = System.Drawing.Color.Transparent;
+            this.labelLevelVal.Font = new System.Drawing.Font("Impact", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.labelLevelVal.Location = new System.Drawing.Point(176, 186);
+            this.labelLevelVal.Name = "labelLevelVal";
+            this.labelLevelVal.Size = new System.Drawing.Size(17, 19);
+            this.labelLevelVal.TabIndex = 15;
+            this.labelLevelVal.Text = "0";
+            // 
+            // labelLevel
+            // 
+            this.labelLevel.AutoSize = true;
+            this.labelLevel.BackColor = System.Drawing.Color.Transparent;
+            this.labelLevel.Font = new System.Drawing.Font("Impact", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.labelLevel.Location = new System.Drawing.Point(130, 186);
+            this.labelLevel.Name = "labelLevel";
+            this.labelLevel.Size = new System.Drawing.Size(43, 19);
+            this.labelLevel.TabIndex = 14;
+            this.labelLevel.Text = "LEVEL:";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(784, 561);
+            this.Controls.Add(this.labelLevelVal);
+            this.Controls.Add(this.labelLevel);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.button1);
             this.Controls.Add(this.labelCostHire);
             this.Controls.Add(this.labelCost);
             this.Controls.Add(this.labelCostLearn);
-            this.Controls.Add(this.labelCost2);
+            this.Controls.Add(this.labelCostLvl);
             this.Controls.Add(this.buttonLearn);
             this.Controls.Add(this.buttonHire);
             this.Controls.Add(this.buttonSell);
@@ -236,13 +250,14 @@
         private System.Windows.Forms.Button buttonSell;
         private System.Windows.Forms.Button buttonHire;
         private System.Windows.Forms.Button buttonLearn;
-        private System.Windows.Forms.Label labelCost2;
+        private System.Windows.Forms.Label labelCostLvl;
         private System.Windows.Forms.Label labelCostLearn;
         private System.Windows.Forms.Label labelCostHire;
         private System.Windows.Forms.Label labelCost;
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label labelLevelVal;
+        private System.Windows.Forms.Label labelLevel;
     }
 }
 

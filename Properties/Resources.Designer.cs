@@ -73,6 +73,56 @@ namespace MarioMiner.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Blank {
+            get {
+                object obj = ResourceManager.GetObject("Blank", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap learn_1 {
+            get {
+                object obj = ResourceManager.GetObject("learn_1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap learn_2 {
+            get {
+                object obj = ResourceManager.GetObject("learn_2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap learn_3 {
+            get {
+                object obj = ResourceManager.GetObject("learn_3", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap learn_4 {
+            get {
+                object obj = ResourceManager.GetObject("learn_4", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap LuigiBlank {
             get {
                 object obj = ResourceManager.GetObject("LuigiBlank", resourceCulture);
@@ -86,6 +136,16 @@ namespace MarioMiner.Properties {
         internal static System.Drawing.Bitmap LuigiDown {
             get {
                 object obj = ResourceManager.GetObject("LuigiDown", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap LuigiStop {
+            get {
+                object obj = ResourceManager.GetObject("LuigiStop", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

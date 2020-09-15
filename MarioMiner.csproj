@@ -60,6 +60,7 @@
     <Compile Include="GameLoop.cs" />
     <Compile Include="Game.cs" />
     <Compile Include="GameSprite.cs" />
+    <Compile Include="LearnIcon.cs" />
     <Compile Include="LuigiSpirit.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -108,6 +109,24 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\LuigiBlank.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LuigiStop.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\learn_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Blank.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\learn_4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\learn_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\learn_3.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

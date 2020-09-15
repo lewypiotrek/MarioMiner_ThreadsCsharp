@@ -8,15 +8,13 @@ namespace MarioMiner
     class GameLoop
     {
         // Game object 
-        private Game _myGame;
+        public Game _myGame;
         // Game status
         public bool Running { get; private set; }
 
         // ------ METHODS ------
 
         public void Load(Game gameObj){ _myGame = gameObj; }
-        public int GetStone() { return _myGame.StoneScore; }
-        public int GetGold() { return _myGame.GoldScore; }
         public void SellStone() { _myGame.SellStone(); }
         public int GetCosts(int costType)
         {
@@ -24,7 +22,7 @@ namespace MarioMiner
                 return _myGame.luigiCost;
             else if (costType == 1)
                 return _myGame.levelCost;
-            else     
+            else   
                 return 0;
         }
 
@@ -52,7 +50,7 @@ namespace MarioMiner
             Thread AutoDigThread = new Thread(threadDelegate);
             AutoDigThread.IsBackground = true; // to make sure that the thread will be abortet after windows close
             AutoDigThread.Start(); 
-             
+                         
 
             while (Running)
             {
@@ -64,15 +62,12 @@ namespace MarioMiner
                 _myGame.Update(GameTime);
                 // Update Game at 60fps
                 await Task.Delay(8);
-
             }
         }
-
-
+        
         public void Stop()
         {
             Running = false;
-            _myGame?.Unload();
         }
 
         public void Draw(Graphics gfx)
@@ -80,13 +75,5 @@ namespace MarioMiner
             _myGame.Draw(gfx);
         }
 
-        public void LevelUp()
-        {
-            _myGame.level++;        
-        }
-        public void CreateLuigi()
-        {
-            _myGame.HireLuigi();
-        }
     }
 }

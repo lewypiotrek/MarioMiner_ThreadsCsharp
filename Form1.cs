@@ -2,6 +2,7 @@
 using System.Drawing;
 using System.Windows.Forms;
 
+
 namespace MarioMiner
 {
     public partial class Form1 : Form
@@ -41,11 +42,11 @@ namespace MarioMiner
         {
             // Draw game graphics on form
             gameLoop.Draw(e.Graphics);
-
-            labelStone.Text = gameLoop.GetStone().ToString();
-            labelGold.Text = gameLoop.GetGold().ToString();
-
-            
+            labelStone.Text = gameLoop._myGame.StoneScore.ToString();
+            labelGold.Text = gameLoop._myGame.GoldScore.ToString();
+            labelLevelVal.Text = gameLoop._myGame.level.ToString();
+            labelCostHire.Text = gameLoop.GetCosts(0).ToString(); // 0 - luigi 1 - level    
+            labelCostLearn.Text = gameLoop.GetCosts(1).ToString();
         }
 
         private void GraphicsTimer_Tick(object sender, EventArgs e)
@@ -56,28 +57,28 @@ namespace MarioMiner
 
         private void buttonSell_Click(object sender, EventArgs e)
         {
-            if(gameLoop.GetStone() >= 150)
+            if(gameLoop._myGame.StoneScore >= 150)
             {
                 gameLoop.SellStone();
             }
-
         }
 
         private void buttonLearn_Click(object sender, EventArgs e)
         {
-            gameLoop.LevelUp();
+            if(gameLoop._myGame.learnQueueSize < 4)
+            {
+                gameLoop._myGame.AddLearn();
+            }                
         }
 
         private void buttonHire_Click(object sender, EventArgs e)
-        {
-            gameLoop.CreateLuigi();
-
+        {           
             // 0 - luigi cost 1 - learn cost
-            if(gameLoop.GetGold() >= gameLoop.GetCosts(0))
+            if(gameLoop._myGame.GoldScore >= gameLoop.GetCosts(0))
             {
-
+                gameLoop._myGame.HireLuigi();
             }
-
         }
+
     }
 }
