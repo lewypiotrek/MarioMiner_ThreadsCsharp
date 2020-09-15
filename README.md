@@ -1,13 +1,12 @@
 # MarioMiner_ThreadsCsharp
 
 - TECHNOLOGIES:
-  - MS SQL
-  - C++
-  - T-SQL
-  - Qt framework
+  - C#
+  - Windows Forms
+  - .NET
   
   -------------------------------------------------------------------------
   
   - Overview:
-  
+  ![alt text](https://github.com/lewypiotrek/Study_HomeLibrary/blob/master/Img/Screenshot_1.PNG)
   
